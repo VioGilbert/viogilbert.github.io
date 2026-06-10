@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+    --primary-color: #b98391;
+    --background-color: #f4e1f2;
+    --text-color: #3e2723;
+}
+
+.about-table{
+    width:85%;
+    margin:60px auto;
+}
+
+.about-table h2{
+    text-align:center;
+    font-size:35px;
+    margin-bottom:30px;
+    color:#660033;
+}
+
+.about-table table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.about-table th{
+    width:30%;
+    background:#660033;
+    color:white;
+    padding:18px;
+    text-align:left;
+}
+
+.about-table td{
+    padding:18px;
+    background:#FFF7FB;
+}
+
+.about-table tr:nth-child(even) td{
+    background:#FFE5F1;
+}
+
+.about-table tr:hover td{
+    background:#FFD6EA;
+}
+
+@media(max-width:768px){
+
+.about-table table,
+.about-table tr,
+.about-table td,
+.about-table th{
+    display:block;
+    width:100%;
+}
+
+.about-table th{
+    border-bottom:none;
+}
+
+.about-table td{
+    margin-bottom:10px;
+}
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Century Gothic, sans-serif;
+}
+
+body{
+    background:#f4e1f2;
+    color:#b98391;
+}
+
+header{
+    background:#660033;
+    padding:18px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:0 20px;
+}
+
+nav ul li a{
+    color:#f5f5f5;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#FFCCE5;
+}
+
+.about{
+    width:85%;
+    margin:60px auto;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:40px;
+}
+
+.profile-image{
+    flex:1;
+    text-align:center;
+}
+
+.profile-image img{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid #660033;
+}
+
+.profile-info{
+    flex:2;
+}
+
+.profile-info h1{
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.profile-info p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.currently{
+    width:90%;
+    margin:auto;
+    margin-bottom:60px;
+}
+
+.currently h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+    color:#660033;
+}
+
+.card p{
+    padding:0 15px 20px;
+    line-height:1.7;
+}
+
+footer{
+    background:#660033;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.about{
+    flex-direction:column;
+    text-align:center;
+}
+
+.profile-info h1{
+    font-size:36px;
+}
+
+.currently h2{
+    font-size:30px;
+}
+
+}
+    </style>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+            <li><a href="fam.html">Family and Friends</a></li>
+        </ul>
+    </nav>
+
+</header>
+    <section class="about-table">
+
+    <h2>About Me</h2>
+
+    <table>
+
+        <tr>
+            <th>Full Name</th>
+            <td>Nisaa' az-Zahraa binti Khairol Basri</td>
+        </tr>
+
+        <tr>
+            <th>Nickname</th>
+            <td>Nisaa', Zahraa, Ica, Cicha (for my niece), nicak</td>
+        </tr>
+
+        <tr>
+            <th>Age</th>
+            <td>20 Years Old</td>
+        </tr>
+
+        <tr>
+            <th>Date of Birth</th>
+            <td>1st April 2006</td>
+        </tr>
+
+        <tr>
+            <th>Education</th>
+            <td>Diploma in Library Informatics</td>
+        </tr>
+
+        <tr>
+            <th>University</th>
+            <td>Universiti Teknologi MARA (UiTM) Kampus Sungai Petani</td>
+        </tr>
+
+        <tr>
+            <th>Favourite Colour</th>
+            <td>Purple</td>
+        </tr>
+
+        <tr>
+            <th>Hobbies</th>
+            <td>Reading, Watching Movies and Shows, Listening to Music</td>
+        </tr>
+
+        <tr>
+            <th>Dream</th>
+            <td>I want to make my parents proud, have a successful career, buy more books, exploring new places, and travelling around the world.</td>
+        </tr>
+
+    </table>
+
+</section>
+</head>
+<body>
+
+<section class="about">
+
+    <div class="profile-info">
+
+    </div>
+
+</section>
+
+<section class="currently">
+
+    <h2>The "Currently" Page</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+
+            <img src="imagee/lemon.jpg" alt="Reading">
+
+            <h3>📚 Current Reading</h3>
+
+            <p>
+                I love reading so much. I have been reading since I was in primary school. Until now, I have read many books in every genre. I love to read novels, especially romance and fantasy novels. 
+                My current read is, As Long As The Lemon Trees Grow by Zoulfa Katouh. Its a breathtaking story of love and loss set amid the Syrian revolution. 
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <a href="https://open.spotify.com/track/0W0iAC1VGlB82PI6elxFYf?si=997fadeb99254f81" target="_blank"><img src="imagee/guilty.jpg" alt="🎵 Current Listening"></a>
+
+            <h3>🎵 Current Listening</h3>
+
+            <p>Lately, I've been listening to Taylor Swift's "The Tortured Poets Deparment" album on repeat. This song hold a special place in my heart.</p>
+            <p></p>
+            <p>Click the picture album to listen to the song on Spotify :D</p>
+
+        </div>
+
+        <div class="card">
+
+            <img src="imagee/fools.jpg" alt="Learning">
+
+            <h3>💻 Current Watching</h3>
+
+            <p>
+                This shows is my current watch, "The Wonderfools". It is a comedy-drama series that follows three friends who suddenly gaining superpowers after made a contact with leaking fluid from the sewer. The show is hilarious and heartwarming, and I can't wait to see how the story unfolds.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <img src="imagee/coding.jpg" alt="Living">
+
+            <h3>✏️ Current Learning</h3>
+
+            <p>
+                As the picture shown, I am currently learning coding. I have been learning HTML, and CSS for a few weeks now, and I am loving it. I find it fascinating how we can create websites and applications using code. 
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <img src="imagee/living.jpg" alt="Living">
+
+            <h3>🌸 Current Living Status</h3>
+
+            <p>
+                Currently, I am studying at UiTM Cawangan Kedah, pursuing a Diploma in Library Informatics. I involved some activities in my campus, hanging out with my friends, learning new things together, and enjoying my college life to the fullest. 
+            </p>
+
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Welcome to My Realm</p>
+
+</footer>
+
+</body>
+</html>

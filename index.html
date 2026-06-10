@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+    --primary-color: #b98391;
+    --background-color: #f4e1f2;
+    --text-color: #3e2723;
+}
+
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Century Gothic, sans-serif; 
+    color: var(--text-color);
+}
+
+body {
+    padding: 1em;
+    background-color: var(--background-color);
+}
+
+h1, h2, h3 {
+    font-family: Century Gothic, sans-serif;
+}
+
+header{
+    header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:#660033;
+}
+}
+
+nav{
+    max-width:1200px;
+    margin:0;
+    padding:18px 30px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+}
+
+/* Navigation Links */
+
+nav ul li a{
+    color:#660033;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    padding:10px 18px;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+/* Hover */
+
+nav ul li a:hover{
+    background:#FFCCE5;
+    color:#660033;
+}
+
+nav ul li a.active{
+    background:white;
+    color:#660033;
+}
+
+header, section {
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--color-1);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
+    display:block;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container {
+    flex: 0 1 34em;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.text-container p {
+    margin: .75em 0 1em 0;
+    font-size: 1.25em;
+}
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color:#473144;
+    background-color: var(--primary-color);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+section {
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-2);
+    text-align: center; 
+}
+
+h2 {
+    font-size: 2em;
+}
+
+section p {
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+
+section#about-me {
+    background-color: var(--color-3);
+}
+
+.grid-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5";
+    gap: 1em;
+}
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.grid-container img:hover {
+    scale: 1.05;
+}
+
+details {
+    margin-top: 1em;
+    background-color: var(--base-color);
+    border-radius: 1em;
+}
+
+details summary {
+    padding: 1em;
+    font-size: 1.7rem;
+    font-family: Century Gothic, sans-serif;
+}
+
+details p {
+    padding: 0 2em 2em 2em;
+}
+
+footer {
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.life-trailer{
+    width:90%;
+    max-width:800px;
+    margin:30px auto;
+    text-align:center;
+}
+
+.life-trailer h2{
+    font-size:42px;
+    color:#660033;
+    margin-bottom:15px;
+    font-family:Century Gothic,sans-serif;
+}
+
+.trailer-description{
+    width:75%;
+    margin:0 auto 40px;
+    font-size:18px;
+    line-height:1.8;
+    color:#660033;
+}
+
+.video-container{
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 12px 35px rgba(0,0,0,.25);
+}
+
+.video-container video{
+    width:100%;
+    display:block;
+    aspect-ratio:16/9;
+    object-fit:cover;
+}
+
+.video-caption{
+    margin-top:25px;
+    font-size:18px;
+    font-style:italic;
+    color:#660033;
+    line-height:1.8;
+}
+
+footer{
+    background:#660033;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="hero">
+        <img src="imagee/fav things.jpg" alt="Hero Image">
+    </div>
+  <header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+            <li><a href="fam.html">Family and Friends</a></li>
+        </ul>
+    </nav>
+            <h2>Welcome to My Realm ࿔‧ ֶָ֢˚˖𐦍˖˚ֶָ֢ ‧࿔</h2>
+            <p>Holla and welcome! My name is Nisaa' az-Zahraa, and you can call me Nisaa' or Zahraa for short. I'm a coffee and matcha lover, and an avid reader who loves exploring new ideas and stories. I create this website as my personal space where you can check out my favourite things, meet my famiy and friends,
+                and see a little "trailer" of my everyday life. Take your time looking around, and I hope you enjoy getting to know me better!</p>
+    </div> 
+  </header>  
+
+    <section class="life-trailer">
+
+    <h2>A Trailer of My Life 🎞</h2>
+
+    <p class="trailer-description">
+        Some of my chaotic, beautiful moments that were captured.
+    </p>
+
+    <div class="video-container">
+
+        <video controls poster="imagee/cover.jpeg">
+            <source src="imagee/trailer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+    <p class="video-caption">
+        "Happiness depends upon ourselves." - Aristotle
+    </p>
+
+    </section>
+<footer>
+
+    <p>© 2026 Welcome to My Realm</p>
+
+</footer>
+
+</body>
+</html>
